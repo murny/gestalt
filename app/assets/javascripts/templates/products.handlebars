@@ -1,0 +1,11 @@
+<h1>Products</h1>
+
+<ul>
+  {{#each}}
+    <li>{{#linkTo "product" this}}{{name}}{{/linkTo}}</li>
+  {{else}}
+    <li>There are no products.</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
